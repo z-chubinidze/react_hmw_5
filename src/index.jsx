@@ -12,13 +12,15 @@ class App extends Component {
         }
 
     }
-    funqcia = () => {
+     funqcia = () => {
         this.setState(
             {
                 name: "zura"
-            },  
+            },
+            () => {
+                window.alert(this.state.name);
+            }
         );
-         window.alert(this.state.name);
     }
     render() {
         return (
